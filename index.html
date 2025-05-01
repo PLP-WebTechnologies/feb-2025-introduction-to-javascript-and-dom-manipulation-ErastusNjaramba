@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #dynamicText {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+        }
+        #elementContainer {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dynamic DOM Manipulation</h1>
+        <p>Interact with the page using the buttons below!</p>
+    </header>
+    <main>
+        <section>
+            <h2>Text and Style Manipulation</h2>
+            <p id="dynamicText">This text will change when you click the button.</p>
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="toggleStyle()">Toggle Highlight</button>
+        </section>
+        <section>
+            <h2>Add/Remove Elements</h2>
+            <button onclick="addElement()">Add Element</button>
+            <button onclick="removeElement()">Remove Element</button>
+            <div id="elementContainer"></div>
+        </section>
+    </main>
+</body>
+</html>
